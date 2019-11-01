@@ -26,3 +26,13 @@ https://www.slideshare.net/chipchilders/cloud-foundry-the-platform-for-forging-c
 
 ## Arquitetura Kubernetes
 https://kubernetes.io/pt/docs/concepts/architecture/cloud-controller/
+
+## Cloud Controller Manager
+https://kubernetes.io/pt/docs/concepts/architecture/cloud-controller/#
+
+## Recomendações de conteúdo
+* [Borg paper](https://ai.google/research/pubs/pub43438)
+* [Podcast Google](https://www.gcppodcast.com/post/episode-46-borg-and-k8s-with-john-wilkes/)
+* [Kubernetes community hangout](https://github.com/kubernetes/community)
+* #kubernetes-users [Slack](https://slack.kubernetes.io/)
+* [Stack Overflow](https://stackoverflow.com/search?q=kubernetes)
