@@ -17,11 +17,14 @@ docker rm -f $(docker ps -aq) \
 & rm -rf /etc/kubernetes/
 netstat -tlpn | grep 10250
 
+## Kubeadm
+
+https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+
 swapoff -a
+https://stackoverflow.com/questions/53525975/kubernetes-error-uploading-crisocket-timed-out-waiting-for-the-condition
 
 kubeadm init --dry-run
-
-https://stackoverflow.com/questions/53525975/kubernetes-error-uploading-crisocket-timed-out-waiting-for-the-condition
 
 kubectl create -f https://git.io/weave-kube
 ```
