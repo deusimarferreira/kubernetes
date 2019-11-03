@@ -40,3 +40,6 @@ sudo systemctl status docker.service
 sudo systemctl enable kubelet.service
 sudo systemctl enable docker.service
 ```
+
+## Erros
+https://stackoverflow.com/questions/37227349/unable-to-start-docker-service-in-ubuntu-16-04/37640824
