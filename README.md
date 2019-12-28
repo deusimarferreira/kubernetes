@@ -1,4 +1,4 @@
-# Fundamentos Kubernets
+# Fundamentos Kubernetes
 
 Fórum: https://forum.linuxfoundation.org/categories/lfs258-class-forum
 
@@ -9,4 +9,12 @@ https://www.linux.com/
 * Debian - https://wiki.debian.org/systemd/CheatSheet
 * OpenSUSE - https://en.opensuse.org/openSUSE:Cheat_sheet_13.1#Services
 
-## 
+## Ferramentas
+* [minekube](/minekube.md)
+* [hyperkube](/hyperkube.md)
+
+## Instalação e Configuração
+## Kubernetes Achitecture
+## APIs and Access
+## API Objects
+## Managing State with Deployments
