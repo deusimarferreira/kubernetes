@@ -11,7 +11,7 @@ https://www.linux.com/
 * OpenSUSE - https://en.opensuse.org/openSUSE:Cheat_sheet_13.1#Services
 
 ## Ferramentas
-* [minekube](/minikube.md)
+* [minikube](/minikube.md)
 * [hyperkube](/hyperkube.md)
 
 ## Instalação e Configuração
