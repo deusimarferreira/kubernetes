@@ -1,4 +1,11 @@
 # Kubernetes
+Kubernetes é um conjunto de daemons/binaries:
+* [kube-apiserver (AKA the master)](/kube-apiserver.md)
+* kubelet (start/stop containers, sync conf.),
+* kube-scheduler (resources manager)
+* kube-controller-manager (monitor RC, and maintain the desired state)
+* kube-proxy (expose services on each node)
+* kubectl (CLI)
 
 ## By the end of this chapter, you should be able to:
 

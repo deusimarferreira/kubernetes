@@ -1,6 +1,6 @@
-# Instalação
+# Minikube
 
-## Minikube
+## Instalação
 Para informações sobre instalação acesse [Install Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/)
 
 ### Ubuntu 19.04
