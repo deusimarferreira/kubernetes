@@ -42,7 +42,7 @@ wget https://tinyurl.com/y2vqsobb -O calico.yaml
 ~~~ 
 
 ### Network
-Mais informações acesse [network](/network.md)
+Mais informações acesse [Pod Network](/network.md)
 ~~~sh
 kubectl apply -f rbac-kdd.yaml
 kubectl apply -f calico.yaml
