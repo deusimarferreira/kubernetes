@@ -39,10 +39,16 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 wget https://tinyurl.com/yb4xturm -O rbac-kdd.yaml
 wget https://tinyurl.com/y2vqsobb -O calico.yaml
+~~~ 
 
+### Network
+Mais informações acesse [network](/network.md)
+~~~sh
 kubectl apply -f rbac-kdd.yaml
 kubectl apply -f calico.yaml
+~~~
 
+~~~sh
 kubectl taint nodes \
     --all node-role.kubernetes.io/master-
 
