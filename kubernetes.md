@@ -1,5 +1,5 @@
 # Kubernetes Source
-A [lista de releases](https://github.com/kubernetes/kubernetes/releases) está disponível no Github, Junto com **gcloud**, **minikube** e **kubeadmin**, eles abrangem vários cenários para começar a usar o Kubernetes.
+A [lista de releases](https://github.com/kubernetes/kubernetes/releases) está disponível no Github, Junto com **gcloud**, **minikube** e **kubeadm**, eles abrangem vários cenários para começar a usar o Kubernetes.
 
 * Realizar clone dos fontes via Github e compilar nativamente em sua plataforma via ``Makefile``
 * Ou via iamgens Docker 
