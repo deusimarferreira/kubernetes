@@ -15,8 +15,9 @@ Acesse o [fórum do curso](https://forum.linuxfoundation.org/categories/lfs258-c
 * [Managing State with Deployments]()
 
 ## Ferramentas
-* [minikube](/minikube.md)
-* [hyperkube](/hyperkube.md)
+* [Kubernetes Source](/kubernetes.md)
+* [Minikube](/minikube.md)
+* [Hyperkube](/hyperkube.md)
 
 ## Distribuções Linux
 * Fedora - https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet
