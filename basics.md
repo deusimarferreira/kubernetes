@@ -1,18 +1,11 @@
 # Kubernetes
 Kubernetes é um conjunto de daemons/binaries:
 * [kube-apiserver (AKA the master)](/kube-apiserver.md)
-* kubelet (start/stop containers, sync conf.),
+* kubelet (start/stop containers, sync conf.)
 * kube-scheduler (resources manager)
 * kube-controller-manager (monitor RC, and maintain the desired state)
 * kube-proxy (expose services on each node)
 * kubectl (CLI)
-
-## By the end of this chapter, you should be able to:
-
-* Discuss Kubernetes.
-* Learn the basic Kubernetes terminology.
-* Discuss the configuration tools.
-* Learn what community resources are available.&nbsp;
 
 ## O que é Kubernets?
 Kubernetes foi inspirado no projeto Borg (Sistema interno usado para gerenciar aplicações com Gmail, Apps, GCE).
