@@ -1,21 +1,24 @@
 # Fundamentos Kubernetes
+Este conteúdo foi criado a parte das aulas práticas do curso [Kubernetes Fundamentals (LFS258)](https://training.linuxfoundation.org/training/kubernetes-fundamentals/).
 
-Fórum: https://forum.linuxfoundation.org/categories/lfs258-class-forum
+Acesse o [fórum do curso](https://forum.linuxfoundation.org/categories/lfs258-class-forum)
 
-https://www.linux.com/
-
-## Introdução
+## Conteúdo
 * [Conceitos Básicos](/basics.md)
-* Fedora - https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet
-* Debian - https://wiki.debian.org/systemd/CheatSheet
-* OpenSUSE - https://en.opensuse.org/openSUSE:Cheat_sheet_13.1#Services
+* Instalação e Configuração
+  * [Instalação do k8s tools](/install.md)
+  * [Configuração node master](/master.md)
+  * [Configuração node worker](/worker.md)
+* [Kubernetes Achitecture]()
+* [APIs and Access]()
+* [API Objects]()
+* [Managing State with Deployments]()
 
 ## Ferramentas
 * [minikube](/minikube.md)
 * [hyperkube](/hyperkube.md)
 
-## Instalação e Configuração
-## Kubernetes Achitecture
-## APIs and Access
-## API Objects
-## Managing State with Deployments
+## Distribuções Linux
+* Fedora - https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet
+* Debian - https://wiki.debian.org/systemd/CheatSheet
+* OpenSUSE - https://en.opensuse.org/openSUSE:Cheat_sheet_13.1#Services
