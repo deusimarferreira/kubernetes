@@ -13,29 +13,30 @@ Kubernetes foi inspirado no projeto Borg (Sistema interno usado para gerenciar a
 
 Kubenetes carrega 15 anos de experiência do Google.
 
-Devido a dificuldade de procunciar o nome, muitos usam o nickname, K8s (Kate's), onde 8 é o número de letras da palavra Kuberbetes.
+Devido a dificuldade de pronunciar o nome, muitos usam o nickname, K8s (Kate's), onde 8 é o número de letras da palavra Kuberbetes.
 
+### Objetivos
 * Container Orchestrator
 * Workload Placement
 * Infrastructure Abstraction
 * Disered State
 
-## Benfícios
+### Benfícios
 * Speed of deployment
 * Ability to absorb change quickly
 * Ability to recovery quickly
 * Hide complexity in the cluster
 
-## Princípios
+### Princípios
 * Desired State (Declaritive Configuration) 
 * Controllers (Control Loops)
 * One Master (The API Server)
 
-## Arquitetura Kubernetes
-https://kubernetes.io/pt/docs/concepts/architecture/cloud-controller/
-
-## Cloud Controller Manager
-https://kubernetes.io/pt/docs/concepts/architecture/cloud-controller/#
+### Kubernetes Objects
+* Pods
+* Controllers
+* Services
+* Storage
 
 ## Concorrentes
 * Docker Swarm

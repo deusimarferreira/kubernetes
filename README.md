@@ -1,15 +1,13 @@
 # Fundamentos Kubernetes
-Este conteúdo foi criado a parte das aulas práticas do curso [Kubernetes Fundamentals (LFS258)](https://training.linuxfoundation.org/training/kubernetes-fundamentals/).
-
-Acesse o [fórum do curso](https://forum.linuxfoundation.org/categories/lfs258-class-forum)
+Este conteúdo foi criado a partir dos conhecimentos adquiridos nos treinamentos [Kubernetes Fundamentals (LFS258)](https://training.linuxfoundation.org/training/kubernetes-fundamentals/), [Kubernetes Installation and Configuration Fundamentals](https://www.pluralsight.com/courses/kubernetes-installation-configuration-fundamentals), [Kubernetes Concepts](https://kubernetes.io/docs/concepts/), atividades práticas para realização dos exames CKA e CKAD e outras lições adquiridas no dia a dia.
 
 ## Conteúdo
 * [Conceitos Básicos](/basics.md)
+* [Kubernetes Achitecture](/achitecture.md)
 * Instalação e Configuração
   * [Instalação do k8s tools](/install.md)
   * [Configuração node master](/master.md)
   * [Configuração node worker](/worker.md)
-* [Kubernetes Achitecture]()
 * [APIs and Access]()
 * [API Objects]()
 * [Managing State with Deployments]()
