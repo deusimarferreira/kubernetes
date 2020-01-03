@@ -1,7 +1,8 @@
 # Fundamentos Kubernetes
-Este conteúdo foi criado a partir dos conhecimentos adquiridos nos treinamentos [Kubernetes Fundamentals (LFS258)](https://training.linuxfoundation.org/training/kubernetes-fundamentals/), [Kubernetes Installation and Configuration Fundamentals](https://www.pluralsight.com/courses/kubernetes-installation-configuration-fundamentals), [Kubernetes Concepts](https://kubernetes.io/docs/concepts/), atividades práticas para realização dos exames CKA e CKAD e outras lições adquiridas no dia a dia.
+Este conteúdo foi criado a partir dos conhecimentos adquiridos nos treinamentos [Kubernetes Fundamentals (LFS258)](https://training.linuxfoundation.org/training/kubernetes-fundamentals/), [Kubernetes Installation and Configuration Fundamentals](https://www.pluralsight.com/courses/kubernetes-installation-configuration-fundamentals), na documentação [Kubernetes Concepts](https://kubernetes.io/docs/concepts/), nas atividades práticas para realização dos exames CKA e CKAD e outras lições adquiridas no dia a dia.
 
 ## Conteúdo
+* [Um pouco de história](/history.md)
 * [Conceitos Básicos](/basics.md)
 * [Kubernetes Achitecture](/achitecture.md)
 * Instalação e Configuração
