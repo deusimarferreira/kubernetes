@@ -9,6 +9,8 @@ Este conteúdo foi criado a partir dos conhecimentos adquiridos nos treinamentos
   * [Instalação do k8s tools](/install.md)
   * [Configuração node master](/master.md)
   * [Configuração node worker](/worker.md)
+  * [Comandos adicionais](/commands-addons.md)
+  * [Deploy aplicação simples (nginx)](/deploy-simple-application.md)
 * [APIs and Access]()
 * [API Objects]()
 * [Managing State with Deployments]()

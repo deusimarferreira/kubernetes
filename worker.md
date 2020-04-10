@@ -1,47 +1,52 @@
 # Worker Node
 
-## Instalação/Configuração
+## Instalação/Configuração Básicas
 Os passos apresentados a seguir leva em consideração que você já tenha o **k8s tools** devidamente instaladas, caso contrário favor realizar [instalação k8s tools](/install.md)
 
-### Ações no node master
+## Instalação/Configuração Worker Node
+### Ações no Master - Control Plane
 ~~~sh
+# Observação: Nesta sessão todos os comandos precisam ser executados com usuário não root/su
 ip addr show | grep inet
 
-vim /etc/hosts
-167.172.121.160 k8smaster
-
-# Lista tokens existentes
+# Lista tokens existentes type "authe ..."
 sudo kubeadm token list
-~~~
 
-~~~sh
-# Cria novo token
-$ sudo kubeadm token create
-d35xpy.1hwrqqwwr062jgqk
-~~~
+# O token tem validade de 2 horas, caso todos estejam expirados, gere um novo token
+sudo kubeadm token create
 
-~~~sh
+# Crie e use um token CA Cert Hash no master para garantir que o join entre o node e o cluster seja realizado de maneira segura.
 # Gera token-ca-cert-hash-sha256
+# Você receberá uma string como resultado.
 openssl x509 -pubkey \
     -in /etc/kubernetes/pki/ca.crt | openssl rsa \
     -pubin -outform der 2>/dev/null | openssl dgst \
     -sha256 -hex | sed 's/^.* //'
-80684ceaba35b55849fc2ec93a32c3e73f6956c56c50a120fd06c844e612f6bb
+#> saída: 5ec5dee725c7c06a93f59bf180ba862e101d99fe321930d0653267d47b29e5a9
 ~~~
 
-### Ações no node worker
+### Ações no Worker Node (this)
 ~~~sh
+# Observação: Nesta sessão todos os comandos precisam ser executados com privilégios root, para isso use o comando sudo -i
+sudo -i
+
+# Adiciona host no arquivo /etc/hosts
+vim /etc/hosts
+    10.10.0.5 k8smaster
+
 # Join node worker
-sudo su
 kubeadm join \
-    --token d35xpy.1hwrqqwwr062jgqk \
+    --token p1oki4.k5v3q3njj8dfb9ce \
     k8smaster:6443 \
     --discovery-token-ca-cert-hash \
-    sha256:80684ceaba35b55849fc2ec93a32c3e73f6956c56c50a120fd06c844e612f6bb
+    sha256:5ec5dee725c7c06a93f59bf180ba862e101d99fe321930d0653267d47b29e5a9
 
-Then you can join any number of worker nodes by running the following on each as root:
+# Observação: Nesta sessão todos os comandos precisam ser executados com usuário não root/su
+# Os comandos a seguir devem falhar. Você não possui o cluster or authentication keys no arquivo .kube/config
+exit
+kubectl get nodes
+    The connection to the server localhost:8080 was refused - did you specify the right host or port?
 
-kubectl -n kube-system get cm kubeadm-config -oyaml
-kubeadm join k8smaster:6443 --token 5rn0dh.z96ii10l9bkww3ws \
-    --discovery-token-ca-cert-hash sha256:20bdf9fd1da245bdce3000735c119f28ae5831c6a28a42a541ef90ab6e461117 
+ls -l .kube
+    cannot access '.kube': No such file or directory
 ~~~

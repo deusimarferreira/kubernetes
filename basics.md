@@ -1,11 +1,11 @@
 # Kubernetes
-Nesta sessão você encontrará alguns conceitos básicos que são extremamente importantes para o Kubernetes.
+Nesta sessão você encontrará alguns conceitos básicos que são extremamente importantes para entendimento do funcionamento do K8s.
 
 ## O que é Kubernets?
-Kubernetes é um conjunto de daemons/binaries:
+Kubernetes é um conjunto de daemons/binaries que juntos simplificam toda as adminstração do cluster:
 * [kubeadm (bootstrap a minimum viable Kubernetes cluster)](/kubeadm.md)
 * [kube-apiserver (AKA the master)](/kube-apiserver.md)
-* [kubelet (start/stop containers, sync conf](/kubelet.md)
+* [kubelet (start/stop containers, sync conf)](/kubelet.md)
 * kube-scheduler (resources manager)
 * kube-controller-manager (monitor RC, and maintain the desired state)
 * kube-proxy (expose services on each node)
