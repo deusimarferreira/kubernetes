@@ -1,7 +1,7 @@
 # Worker Node
 
 ## Instalação/Configuração Básicas
-Os passos apresentados a seguir leva em consideração que você já tenha o **k8s tools** devidamente instaladas, caso contrário favor realizar [instalação k8s tools](/install.md)
+Os passos apresentados a seguir leva em consideração que você já tenha o **K8s tools** devidamente instaladas, caso contrário favor realizar [instalação K8s tools](/install.md)
 
 ## Instalação/Configuração Worker Node
 ### Ações no Master - Control Plane

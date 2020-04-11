@@ -5,15 +5,16 @@ Este conteúdo foi criado a partir dos conhecimentos adquiridos nos treinamentos
 * [Um pouco de história](/history.md)
 * [Conceitos Básicos](/basics.md)
 * [Kubernetes Achitecture](/achitecture.md)
+  * [APIs and Access]()
+  * [API Objects]()
+  * [Managing State with Deployments]()
 * Instalação e Configuração
-  * [Instalação do k8s tools](/install.md)
+  * [Instalação do K8s tools](/install.md)
   * [Configuração node master](/master.md)
   * [Configuração node worker](/worker.md)
   * [Comandos adicionais](/commands-addons.md)
-  * [Deploy aplicação simples (nginx)](/deploy-simple-application.md)
-* [APIs and Access]()
-* [API Objects]()
-* [Managing State with Deployments]()
+* [Deploy aplicação simples (nginx)](/deploy-simple-application.md)
+* [Restrições de CPU/Memória](/constraints-cpu-memory.md)
 
 ## Ferramentas
 * [Kubernetes Source](/kubernetes.md)
