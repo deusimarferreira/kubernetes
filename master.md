@@ -53,7 +53,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ~~~ 
 
 ## Network
-Mais informações acesse [Pod Network](/network.md)
+Mais informações acesse [Network](/network.md)
 
 ~~~sh
 # Observação: Nesta sessão todos os comandos precisam ser executados com usuário não root/su
