@@ -1,4 +1,5 @@
 # Kubectl
+Você irá encontrar as dicas aqui apresentadas e outras em [Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/), na prova de certificação somente a documentação oficial poderá ser consulta.
 
 ## Instalação
 https://kubernetes.io/docs/tasks/tools/install-kubectl/
