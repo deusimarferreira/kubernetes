@@ -6,15 +6,15 @@ Este conteúdo foi criado a partir dos conhecimentos adquiridos nos treinamentos
 * [Conceitos Básicos](/basics.md)
 * [Kubernetes Achitecture](/achitecture.md)
 * Instalação e Configuração
- * [Instalação do K8s tools](/install.md)
- * [Configuração node master](/master.md)
- * [Configuração node worker](/worker.md)
- * [Comandos adicionais](/commands-addons.md)
+  * [Instalação do K8s tools](/install.md)
+  * [Configuração node master](/master.md)
+  * [Configuração node worker](/worker.md)
+  * [Comandos adicionais](/commands-addons.md)
 * Administração
- * [Kubectl](/kubectl.md)
-  * [JSON PATH](/json.md)
-  * [Deploy aplicação simples (nginx)](/deploy-simple-application.md)
-  * [Restrições de CPU/Memória](/constraints-cpu-memory.md)
+  * [Kubectl](/kubectl.md)
+    * [JSON PATH](/json.md)
+    * [Deploy aplicação simples (nginx)](/deploy-simple-application.md)
+    * [Restrições de CPU/Memória](/constraints-cpu-memory.md)
 
 ## Ferramentas
 * [Kubernetes Source](/kubernetes.md)
