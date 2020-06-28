@@ -27,25 +27,11 @@ $ kubectl get nodes -A -o=jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.sta
 $ kubectl get nodes -o=custom-columns=NODE:.metadata.name ,CPU:.status.capacity.cpu
 ~~~
 
+[Clique aqui](/json.md) para mas dicas sobre JSON PATH.
+
 ## Sort By
 
 ~~~bash
 $ kubectl get nodes --sort-by=.metadata.name
 $ kubectl get nodes --sort-by=.status.capacity.cpu
-~~~
-
-## Falta organizar
-
-~~~sh
-# Criar uma rede com kubectl usando um resource manifest, no exemplo abaixo vamos usar o Weave network como exemplo. 
-
-kubectl create -f https://git.io/weave-kube
-~~~
-
-~~~sh
-# Removendo configs kubernetes
-docker rm -f $(docker ps -aq) \
-& rm -rf /var/lib/etcd \
-& rm -rf /etc/kubernetes/
-netstat -tlpn | grep 10250
 ~~~
