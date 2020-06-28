@@ -12,7 +12,6 @@ Este conteúdo foi criado a partir dos conhecimentos adquiridos nos treinamentos
   * [Comandos adicionais](/commands-addons.md)
 * Administração
   * [Kubectl](/kubectl.md)
-    * [JSON PATH](/json.md)
     * [Deploy aplicação simples (nginx)](/deploy-simple-application.md)
     * [Restrições de CPU/Memória](/constraints-cpu-memory.md)
 
