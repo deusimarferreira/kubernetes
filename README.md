@@ -5,9 +5,6 @@ Este conteúdo foi criado a partir dos conhecimentos adquiridos nos treinamentos
 * [Um pouco de história](/history.md)
 * [Conceitos Básicos](/basics.md)
 * [Kubernetes Achitecture](/achitecture.md)
-  * [APIs and Access]()
-  * [API Objects]()
-  * [Managing State with Deployments]()
 * Instalação e Configuração
   * [Instalação do K8s tools](/install.md)
   * [Configuração node master](/master.md)
@@ -20,8 +17,3 @@ Este conteúdo foi criado a partir dos conhecimentos adquiridos nos treinamentos
 * [Kubernetes Source](/kubernetes.md)
 * [Minikube](/minikube.md)
 * [Hyperkube](/hyperkube.md)
-
-## Distribuções Linux
-* Fedora - https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet
-* Debian - https://wiki.debian.org/systemd/CheatSheet
-* OpenSUSE - https://en.opensuse.org/openSUSE:Cheat_sheet_13.1#Services
