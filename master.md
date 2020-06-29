@@ -1,24 +1,28 @@
-# Master - Control Plane Components
-* API Server (6443)
+# Master - Control Plane
+O Master executa varios servers e gerenciamento processos para o cluster, ele é responsável por manter toda a sinfonia dentro do cluster. 
+
+## Componentes
+* Kube API Server (6443)
     * Central
     * Simple
     * RESTful
     * Updates etcd
-* Cluster Store 
+* Kube Cluster Store 
     * Persists State
     * key-value
     * etcd (2379-2380)
     * watch
-* Scheduler (10251)
+* Kube Scheduler (10251)
     * Watches API server
     * Schedulers PODs
     * Resources
     * Respects contraints
-* Controller Manger (10252)
+* Kube Controller Manager (10252)
     * Controllers loops
     * Lifecycle functions and desired state
     * Watch and update the API Server
     * ReplicaSet
+* Kube Cloud Controller Manager (Optional agent)
 
 ## Instalação/Configuração Básicas
 Os passos apresentados a seguir leva em consideração que você já tenha o **K8s tools** devidamente instaladas, caso contrário favor realizar [instalação K8s tools](/install.md)
