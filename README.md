@@ -19,3 +19,5 @@ Este conteúdo foi criado a partir dos conhecimentos adquiridos nos treinamentos
 * [Kubernetes Source](/kubernetes.md)
 * [Minikube](/minikube.md)
 * [Hyperkube](/hyperkube.md)
+* [Play with Kubernetes](https://labs.play-with-k8s.com/)
+* [Kubernetes Playground](https://www.katacoda.com/courses/kubernetes/playground)
