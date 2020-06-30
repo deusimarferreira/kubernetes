@@ -3,59 +3,30 @@
 ## Instalação
 Para informações sobre instalação acesse [Install Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/)
 
-### Ubuntu 19.04
+## Iniciando Cluster com Minikube
 ~~~sh
-# Instalação das dependências
-# https://tutorialforlinux.com/2019/03/30/step-by-step-kvm-ubuntu-19-04-installation-guide/2/
-sudo apt update
-
-# https://help.ubuntu.com/community/KVM/Installation
-# libvirt-daemon
-sudo apt-get install qemu qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
-
-sudo chown janaina:libvirt /dev/kvm
-sudo chown janaina:libvirt /var/run/libvirt/libvirt-sock
-
-rmmod kvm_intel
-modprobe -a kvm_intel
-
-# Para mais informações acesse https://minikube.sigs.k8s.io/docs/start/linux/
-# https://bugzilla.redhat.com/show_bug.cgi?id=950436
-minikube start --vm-driver=kvm2 -p villalabs
+# Windows
+$ minikube start --driver=hyperv
 ~~~
 
-## Kubeadm
-Atualmente, o método mas direto para começar a construir um cluster real é usar o kubeadm, que surgiu na Kubernetes v1.4.0, e pode ser usado para iniciar um cluster rapidamente.
-
-[Consulte a documentação](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/)
-
-[Install Kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
-
-> swapoff -a
-
-> https://stackoverflow.com/questions/53525975/kubernetes-error-uploading-crisocket-timed-out-waiting-for-the-condition
-
-
-Para associar outros nós ao cluster, você precisará de pelo menos um token e um hash SHA256. Esta informação é retornada pelo comando ``kubeadm init`` e ``kubeadm join --token token head-node-IP``
+## Explorando comando kubectl
 
 ~~~sh
-# kubeadm init --dry-run
-kubeadm init
-kubeadm join --token token head-node-IP # workers nodes
-~~~
+# Vamos verificar os nodes existentes
+$ kubectl get nodes
 
-## Kubectl
-https://kubernetes.io/docs/tasks/tools/install-kubectl/
-~~~sh
-# Criar uma rede com kubectl usando um resource manifest, no exemplo abaixo vamos usar o Weave network como exemplo. 
+# Recupera os pods no namespace kube-system
+$ kubectl get pods --namespace=kube-system
 
-kubectl create -f https://git.io/weave-kube
-~~~
+# Deploy do nginx
+$ kubectl create deployment nginx --image=nginx
 
-~~~sh
-# Removendo configs kubernetes
-docker rm -f $(docker ps -aq) \
-& rm -rf /var/lib/etcd \
-& rm -rf /etc/kubernetes/
-netstat -tlpn | grep 10250
+# Expondo serviço
+$ kubectl expose deployment nginx --port=80
+
+# Listando serviço
+$ kubectl get svc nginx
+
+# Recuperar IP+PORT da aplicação
+$ minikube service nginx --url
 ~~~
