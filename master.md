@@ -27,34 +27,11 @@ O Master executa varios servers e gerenciamento processos para o cluster, ele é
 ## Instalação/Configuração Básicas
 Os passos apresentados a seguir leva em consideração que você já tenha o **K8s tools** devidamente instaladas, caso contrário favor realizar [instalação K8s tools](/install.md)
 
-~~~sh
-# Observação: Nesta sessão todos os comandos precisam ser executados com privilégios root, para isso use o comando sudo -i
-sudo -i
+### Kubeadm
+[Clique aqui](/kubeadm.md)
 
-# Find the IP address of the primary interface of the master server
-ip addr show | grep inet
-    ...
-    inet 10.10.0.5/16 brd 10.10.255.255 scope global eth0
-    ...
-
-# Adiciona host no arquivo /etc/hosts
-vim /etc/hosts
-    10.10.0.5 k8smaster
-
-# Criando nosso primeiro arquivo de configuração, necessário para inciar nosso primeiro cluster
-# O conteúdo para o arquivo vc encontra neste repositório em ./yaml/kubeadm-config.yaml
-vim kubeadm-config.yaml
-
-
-kubeadm init --config=kubeadm-config.yaml --upload-certs \
-| tee kubeadm-init.out # Salva saida para revisitação futura
-
-# Observação: Nesta sessão todos os comandos precisam ser executados com usuário não root/su
-exit
-mkdir -p $HOME/.kube
-sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-sudo chown $(id -u):$(id -g) $HOME/.kube/config
-~~~ 
+### Minikube
+[Clique aqui](/minikube.md)
 
 ## Network
 Mais informações acesse [Network](/network.md)
