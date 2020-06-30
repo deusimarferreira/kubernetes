@@ -9,6 +9,11 @@ Para informações sobre instalação acesse [Install Minikube](https://kubernet
 $ minikube start --driver=hyperv
 ~~~
 
+## Ativar Ingress
+~~~sh
+$ minikube addons enable ingress
+~~~
+
 ## Explorando comando kubectl
 
 ~~~sh
