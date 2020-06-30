@@ -1,7 +1,5 @@
 # Commands Add-ons
-
-## Master - Control Plane
-### Consultando Informações do Cluster
+## Consultando Informações do Cluster
 ~~~sh
 # Observação: Nesta sessão todos os comandos precisam ser executados com usuário não root/su
 
@@ -28,7 +26,7 @@ kubectl -n kube-system delete \
 ip a | grep tunl0 && ip a | grep cali
 ~~~
 
-### Taints
+## Taints
 By default, kubernetes cluster will not schedule pods on the master node for security reasons. But if we would like to be able to schedule pods on the master node, e.g: for a single-node kubernetes cluster for testing and development purposes, we can run “$ kubectl taint” command.
 
 ~~~sh
