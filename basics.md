@@ -1,34 +1,34 @@
 # Kubernetes
 Nesta sessão você encontrará alguns conceitos básicos que são extremamente importantes para entendimento do funcionamento do K8s.
 
-## O que é Kubernets?
-Kubernetes é um conjunto de daemons/binaries que juntos simplificam toda as adminstração do cluster:
-* [kubeadm (bootstrap a minimum viable Kubernetes cluster)](/kubeadm.md)
-* [kube-apiserver (AKA the master)](/kube-apiserver.md)
-* [kubelet (start/stop containers, sync conf)](/kubelet.md)
-* kube-scheduler (resources manager)
-* kube-controller-manager (monitor RC, and maintain the desired state)
-* kube-proxy (expose services on each node)
-* [kubectl (CLI)](/kubectl.md)
+## O que é Kubernetes?
+O Kubernetes é uma plataforma portátil, extensível, open-source para gerenciar worloads (cargas de trabalho) e services (serviços) executados em containers (contêineres), que facilita a configuração declarativa e a automação. Possui amplo ecossistema que permite uma rápida expansão (vertifcal e/ou horizontal). Os serviços, suporte e ferramentas do Kubernetes estão amplamente disponíveis.
 
-### Objetivos
-* Container Orchestrator
-* Workload Placement
-* Infrastructure Abstraction
-* Desired State [ref.](https://medium.com/@yannalbou/kubernetes-desired-state-4c5c4e873743)
+* Objetivos
+    * Container Orchestrator
+    * Workload Placement
+    * Infrastructure Abstraction
+    * Desired State [ref.](https://medium.com/@yannalbou/kubernetes-desired-state-4c5c4e873743)
+* Benfícios
+    * Speed of deployment
+    * Ability to absorb change quickly
+    * Ability to recovery quickly
+    * Hide complexity in the cluster
+* Princípios
+    * Desired State (Declaritive Configuration) 
+    * Controllers (Control Loops)
+    * One Master (The API Server)
 
-### Benfícios
-* Speed of deployment
-* Ability to absorb change quickly
-* Ability to recovery quickly
-* Hide complexity in the cluster
+[Clique aqui](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) para mais informações.
 
-### Princípios
-* Desired State (Declaritive Configuration) 
-* Controllers (Control Loops)
-* One Master (The API Server)
+## Componentes Kubernetes
+Um cluster Kubernetes consiste nos componentes que representam o control plane (master) e um conjunto de máquinas chamadas de nodes.
 
-### Kubernetes Objects [ref.](https://kubernetes.io/docs/concepts/#kubernetes-objects)
+![](https://d33wubrfki0l68.cloudfront.net/7016517375d10c702489167e704dcb99e570df85/7bb53/images/docs/components-of-kubernetes.png)From Kubernetes Docs
+
+[Clique aqui](https://kubernetes.io/docs/concepts/overview/components/) para mais informações.
+
+### Objetos Kubernetes [ref.](https://kubernetes.io/docs/concepts/#kubernetes-objects)
 O Kubernetes possui abstrações que representam o estado do seu sistema: aplicativos e cargas de trabalho implantados em contêineres, seus recursos de rede e disco associados e outras informações sobre o que seu cluster está fazendo. Essas abstrações são representadas por objetos na Kubernetes API.
 
 Os objetos basícos do Kubernetes inclue:
@@ -76,8 +76,9 @@ O Kubernetes também contém abstrações de alto nível que dependem dos [Contr
 * Nomad
 * Rancher
 
-## Recomendações de conteúdo
-* [Borg paper](https://ai.google/research/pubs/pub43438)
+# Recomendações de conteúdo
+* [K8s Docs](https://kubernetes.io/docs/concepts/overview/)
+* [Borg paper](https://research.google/pubs/pub43438/)
 * [Podcast Google](https://www.gcppodcast.com/post/episode-46-borg-and-k8s-with-john-wilkes/)
 * [Kubernetes community hangout](https://github.com/kubernetes/community)
 * #kubernetes-users [Slack](https://slack.kubernetes.io/)

@@ -14,3 +14,5 @@
     * Container Runtime Interface
     * Docker
     * Many others ...
+
+[Clique aqui](https://kubernetes.io/docs/concepts/architecture/nodes/) para mais informações.

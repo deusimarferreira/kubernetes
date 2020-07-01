@@ -5,25 +5,21 @@ Este conteúdo foi criado a partir dos conhecimentos adquiridos nos treinamentos
 * [Um pouco de história](/history.md)
 * [Conceitos Básicos](/basics.md)
 * [Kubernetes Achitecture](/achitecture.md)
-  * [APIs and Access](/api-acces.md)
-  * [API Objects](/api-objects.md)
-  * [Managing State with Deployments]()
 * Instalação e Configuração
   * [Instalação do K8s tools](/install.md)
   * [Configuração node master](/master.md)
   * [Configuração node worker](/worker.md)
   * [Comandos adicionais](/commands-addons.md)
-* [Deploy aplicação simples (nginx)](/deploy-simple-application.md)
-* [Restrições de CPU/Memória](/constraints-cpu-memory.md)
-* [Definido limites de recurso para um Namespace](/resource-limits-namespace.md)
-* [Manuteção básica de node](/basic-node-maintenance.md)
+* Administração
+  * [Kubectl](/kubectl.md)
+    * [Deploy aplicação simples (nginx)](/deploy-simple-application.md)
+    * [Restrições de CPU/Memória](/constraints-cpu-memory.md)
+    * [Definido limites de recurso para um Namespace](/resource-limits-namespace.md)
+    * [Manuteção básica de node](/basic-node-maintenance.md)
 
 ## Ferramentas
 * [Kubernetes Source](/kubernetes.md)
 * [Minikube](/minikube.md)
 * [Hyperkube](/hyperkube.md)
-
-## Distribuções Linux
-* Fedora - https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet
-* Debian - https://wiki.debian.org/systemd/CheatSheet
-* OpenSUSE - https://en.opensuse.org/openSUSE:Cheat_sheet_13.1#Services
+* [Play with Kubernetes](https://labs.play-with-k8s.com/)
+* [Kubernetes Playground](https://www.katacoda.com/courses/kubernetes/playground)
