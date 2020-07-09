@@ -21,6 +21,6 @@ Este conteúdo foi criado a partir dos conhecimentos adquiridos nos treinamentos
 * [Kubernetes Source](/kubernetes.md)
 * [Minikube](/minikube.md)
 * [Hyperkube](/hyperkube.md)
-* [Lens \| The Kubernetes IDE](https://github.com/lensapp/lens)
+* [Lens - The Kubernetes IDE](https://github.com/lensapp/lens)
 * [Play with Kubernetes](https://labs.play-with-k8s.com/)
 * [Kubernetes Playground](https://www.katacoda.com/courses/kubernetes/playground)
